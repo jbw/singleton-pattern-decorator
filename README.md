@@ -10,5 +10,5 @@
 A singleton pattern decorator for Python.
 
 # License
-This is free and unencumbered software released into the public domain. For more information, please refer to the accompanying “UNLICENCE” file.
+MIT. For more information, please refer to the accompanying “LICENCE” file.
 
