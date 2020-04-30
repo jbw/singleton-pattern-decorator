@@ -3,7 +3,7 @@
 
 [![codecov](https://codecov.io/gh/jbw/singleton-pattern-decorator/branch/master/graph/badge.svg)](https://codecov.io/gh/jbw/singleton-pattern-decorator)
 
-![.github/workflows/app.yml](https://github.com/jbw/singleton-pattern-decorator/workflows/.github/workflows/app.yml/badge.svg)
+![Singleton Pattern Decorator](https://github.com/jbw/singleton-pattern-decorator/workflows/Singleton%20Pattern%20Decorator/badge.svg?branch=master)
 
 A singleton pattern decorator for Python.
 
