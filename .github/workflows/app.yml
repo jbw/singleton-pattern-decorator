@@ -21,7 +21,6 @@ jobs:
 
       - name: Test with pytest
         run: |
-          cd api
           pip install pytest
           pip install pytest-cov
           python -m pytest --cov-report=xml --cov=singleton_decorator_pattern tests
