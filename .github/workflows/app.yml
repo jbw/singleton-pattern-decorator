@@ -23,7 +23,7 @@ jobs:
         run: |
           pip install pytest
           pip install pytest-cov
-          python -m pytest --cov-report=xml --cov=singleton_decorator_pattern tests
+          python -m pytest --cov-report=xml --cov=singleton_pattern_decorator tests
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1.0.5

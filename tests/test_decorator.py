@@ -1,6 +1,6 @@
 import unittest
 
-from singleton_decorator_pattern.decorator import singleton
+from singleton_pattern_decorator.decorator import singleton
 
 
 @singleton
