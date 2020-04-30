@@ -1,0 +1,38 @@
+name: Singleton Pattern Decorator 
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.7
+
+      - name: Install dependencies with pipenv
+          run: |
+            pip install pipenv
+            pipenv install --deploy --dev
+
+      - run: pipenv run black --check .
+      - run: pipenv run flake8
+
+      - name: Test with pytest
+        run: |
+          cd api
+          pip install pytest
+          pip install pytest-cov
+          python -m pytest --cov-report=xml --cov=singleton_decorator_pattern tests
+          
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1.0.5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: coverage.xml
+          flags: unittests
+          fail_ci_if_error: true
+     
