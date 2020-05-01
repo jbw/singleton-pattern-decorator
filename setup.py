@@ -8,7 +8,7 @@ except:
 
 setuptools.setup(
     name="singleton_pattern_decorator",
-    version="1.0.4",
+    version="1.0.5",
     author="Jason Watson",
     author_email="jbw@jbw.cc",
     description="Singleton decorator",
