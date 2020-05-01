@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="singleton_pattern_decorator",
-    version="1.0.3",
+    version="1.0.4",
     author="Jason Watson",
     author_email="jbw@jbw.cc",
     description="Singleton decorator",
