@@ -15,7 +15,7 @@ setuptools.setup(
     url="https://github.com/jbw/singleton-pattern-decorator",
     long_description=LONG_DESC,
     long_description_content_type="text/markdown",
-    packages=setuptools.find_packages(),
+    packages=["singleton_pattern_decorator"],
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.5",
