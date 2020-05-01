@@ -1,8 +1,10 @@
 import setuptools
 
-
-with open("README.md", "r") as fh:
-    LONG_DESC = fh.read()
+try:
+    with open("README.md", "r") as fh:
+        LONG_DESC = fh.read()
+except:
+    LONG_DESC = ""
 
 setuptools.setup(
     name="singleton_pattern_decorator",
